@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./project   #Contains Dockerfile
+    volumes:
+      - ./project/:/usr/src/app/
+    ports:
+      - 5000:5000  #Reroute from 5000 on host-machine to 5000 on container  
+    depends_on:
+      - db
+
+
+  db:
+    image: postgres:12-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+      # This is in the .env file
+    # environment:
+    #   - POSTGRES_USER=api
+    #   - POSTGRES_PASSWORD=api
+    #   - POSTGRES_DB=api_dev
+    env_file:
+      - ./.env
+
+volumes:
+  postgres_data:
