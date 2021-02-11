@@ -43,7 +43,6 @@ async def update_item(item: ItemPYD):
 
 #Post item
 @app.post("/items/post/",
-    response_model=ItemPYD,
     summary="Create an item",
     response_description="The created item")
 async def save_new_item(item: ItemPYD):
