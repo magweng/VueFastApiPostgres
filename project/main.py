@@ -73,9 +73,15 @@ def configure():
     #Add all routers here
 
 def recreate_database():
-    Base.metadata.drop_all(engine)
+    #Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
+
+recreate_database()
+
 configure()
+
 if __name__ == '__main__':
-    recreate_database()
+   pass
+   
+    #recreate_database()
