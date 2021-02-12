@@ -73,6 +73,11 @@ export default {
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+  width: 50%;
+
 }
 
 .btn {
@@ -82,6 +87,7 @@ body {
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
+ 
 }
 
 .btn:hover {
