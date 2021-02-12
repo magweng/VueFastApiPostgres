@@ -9,6 +9,11 @@ docker-compose down;  docker-compose up -d --build;
 
 [Install Node.js](https://nodejs.org/en/) to get npm
 
+[Install Vue CLI](https://cli.vuejs.org/)
+
+
+if ```node --version``` and ```npm --version``` does not work, reboot.
+
 Then run
 ```
 npm run serve
