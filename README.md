@@ -1,4 +1,4 @@
-﻿# FastApiPostgres
+﻿# VueFastApiPostgres
 
 Run || Rebuild
 ```
