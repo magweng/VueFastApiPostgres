@@ -2,6 +2,7 @@ import fastapi
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 
+#Display html page
 templates = Jinja2Templates(directory="templates")
 
 router = fastapi.APIRouter()
