@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   api:
-    build: ./project   #Contains Dockerfile
+    build: ./backend   #Contains Dockerfile
     volumes:
-      - ./project/:/usr/src/app/
+      - ./backend/:/usr/src/app/
     ports:
       - 5000:5000  #Reroute from 5000 on host-machine to 5000 on container  
     depends_on:
